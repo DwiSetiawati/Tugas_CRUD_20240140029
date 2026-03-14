@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 
-public interface KtpRepository {
+public interface KtpRepository extends JpaRepository<Ktp, Integer>{
     boolean existsByNomorKtp(String nomorktp);
 }
